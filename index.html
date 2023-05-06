@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--don't click the link its a trick.-->
+  <title>my favorites</title>
+  <style>
+    /* Default light mode styles */
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      color: #4C4C4C;
+    }
+    
+    /* Dark mode styles */
+    body.dark-mode {
+      background-color: #4C4C4C;
+      color: white;
+    }
+    
+    /* Button styles */
+    #toggle-dark-mode {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #4C4C4C;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  By Isabel Berenbaum
+ 
+  <h1>My favorite things</h1>
+  <br/>
+  <hr/>
+  <hr/>
+  <h2>Soccer</h2>
+  <p><b>One of my favorite sports are soccer. Whenever I play soccer it makes me feel good, as if I were at a place the I belong. Also soccer is one of the ways I spend time with my dad. So after a while I started to love football as much as my dad.</b></p>
+  <br/>
+  <h2>Art</h2>
+  <p><b>One of my favorite hobbys is art. Whenever I create art I am talking to my friends and making amazing art. Also when creating art I can express myself just by drawing on a paper and enjoying myself while doing that.</b></p>
+  <br/>
+  <hr/>
+  <hr/>
+  <h2>Top three foods</h2>
+  <ol type="I">
+    <li><b>roast beef sandwiches (no cheese or any toppings)</b></li>
+    <li><b>pasta (any pasta)</b></li>
+    <li><b>steak</b></li>
+  </ol>
+  <img src="https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHN0ZWFrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" height="300" width="600" alt="steak">
+  <br/>
+  <br/>
+  <br/>
+  <a href="https://testing.isabelberenabum.repl.co/" target="_blank">hello</a>
+
+  <!-- Toggle/Untoggle Dark Mode Button -->
+  <button id="toggle-dark-mode">Toggle Dark Mode</button>
+
+  <!-- JavaScript code to toggle/untoggle dark mode -->
+  <script>
+    const toggleButton = document.getElementById('toggle-dark-mode');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', function() {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
